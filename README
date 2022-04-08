@@ -1,0 +1,29 @@
+Practica de la tarea 3 de la materia:
+- ADMINISTRACION DE BASE DE DATOS 
+- SEGURIDAD INFORMATICA
+-----------------------------------------
+En esta practica se llevo a acabo la creacion
+de una base de datos que recepcione valores.
+	
+	Codigo MySQL:
+
+	CREATE DATABASE tarea_tres;
+	USE tarea_tres;
+
+	CREATE TABLE `pet_list` (
+	  `id` int(10) PRIMARY KEY AUTO_INCREMENT,
+	  `ownwer_name` varchar(100) DEFAULT NULL,
+	  `pet_name` varchar(100) DEFAULT NULL,
+	  `description` varchar(500) DEFAULT NULL
+	) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+	 SELECT * FROM pet_list;
+---------------------------------------------
+La estructura para la navegacion de usuario 
+consta de:
+	-index.php
+	-success.html
+	-registrar.php
+- - - - - - - - - - - 
+	-accion.php -> contiene las funciones de guardado
+	-conexion.php -> permite la conexion a la BD
